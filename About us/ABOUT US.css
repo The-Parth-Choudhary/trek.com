@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+.team-section{
+    width:100%;
+}
+.team-section .container{
+    width:80%;
+    margin: auto;
+}
+.team-section .container .row{
+    width:60%;
+    margin: auto;
+}
+.team-section .container .row .title{
+    text-align: center;
+    margin-top: 50px;
+}
+.team-section .container .row .title h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #eb6234;
+}
+.team-section .container .row .title p{
+    font-size: 18px;
+    font-family: sans-serif;
+    margin: 30px 0px;
+    color: #a3a3a3;
+}
+.team-section .container .team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.team-section .container .team-card .card{
+    width:100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    cursor: pointer;
+} 
+.team-section .container .team-card .card:hover{
+    background-color: #f3f3f3;
+    transition: 0.3s;
+}
+.team-section .container .team-card .card .image-section img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+.team-section .container .team-card .card .content{
+    width: 100%;
+    text-align: center;
+}
+.team-section .container .team-card .card .content h3{
+    font-size: 27px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #639ab8;
+}
+.team-section .container .team-card .card .content h4{
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color: #6e6e6e;
+}
+.team-section .container .team-card .card .content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color: #6c6c6c;
+}
+@media screen and (max-width: 900px){
+    .team-section .container .team-card{
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+}
+@media screen and (max-width: 900px){
+    .team-section .container .team-card{
+
+    grid-template-columns:1fr;
+
+}
+}
